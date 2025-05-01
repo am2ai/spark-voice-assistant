@@ -7,7 +7,6 @@ class ConversationState(TypedDict):
 from langgraph.graph import StateGraph, END
 from openai import OpenAI
 import os
-
 class Agent:
     def __init__(self):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -16,7 +15,14 @@ class Agent:
         response = self.client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You are a helpful and expressive voice assistant named S.P.A.R.K."},
+                {
+                    "role": "system",
+                    "content": (
+                        "You are a helpful and expressive voice assistant named S.P.A.R.K. "
+                        "Keep replies short (1–2 sentences), clear, and suited for vocal playback. "
+                        "Avoid long explanations unless asked."
+                    )
+                },
                 {"role": "user", "content": prompt}
             ]
         )
