@@ -1,0 +1,8 @@
+openai
+elevenlabs
+langgraph
+python-dotenv
+requests
+
+# External system requirement: ffmpeg (for audio playback)
+# Install manually: https://ffmpeg.org/download.html
