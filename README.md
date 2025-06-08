@@ -41,6 +41,7 @@ Built during the [Microsoft AI Agents Hackathon 2025](https://microsoft.github.i
 ## 🚀 Quick Start
 
 ### 🔑 Requirements
+
 - Python 3.10+
 - `.env` file with your OpenAI and ElevenLabs API keys
 - **FFmpeg** must be installed and in your system PATH for audio playback to work:
@@ -49,17 +50,20 @@ Built during the [Microsoft AI Agents Hackathon 2025](https://microsoft.github.i
   - Linux/macOS: install via package manager (e.g., `brew install ffmpeg`)
 
 ### ⚒️ Setup
+
 ```bash
 pip install -r requirements.txt
 ```
 
 Create a `.env` file with:
-```
+
+```env
 OPENAI_API_KEY=your_openai_key
 ELEVENLABS_API_KEY=your_elevenlabs_key
 ```
 
 ### ▶️ Run the Assistant
+
 ```bash
 python src/main.py
 ```
@@ -73,7 +77,8 @@ Type `exit` to quit.
 ---
 
 ## 📁 Project Structure
-```
+
+```text
 spark-voice-assistant/
 ├── src/
 │   ├── main.py             # Entry point
@@ -89,11 +94,13 @@ spark-voice-assistant/
 ---
 
 ## 🎥 Demo Video
+
 Submitted privately via Microsoft AI Agents Hackathon platform.
 
 ---
 
 ## 📄 Submission Note
+
 S.P.A.R.K. was designed and submitted solo by @am2ai in under 12 hours.
 
 > This is a **prototype** created for educational and hackathon purposes. While functional, it is a base for future exploration and experimentation.
@@ -101,12 +108,21 @@ S.P.A.R.K. was designed and submitted solo by @am2ai in under 12 hours.
 ---
 
 ## 📌 Future Enhancements (Optional)
+
 - Integration with Notion or productivity tools
 - Memory & personalization
 - Web or mobile interface
 - Long-form multi-turn memory
 
 Not part of current submission, but design allows for easy evolution.
+
+### 🚀 Advanced Concept: Voice AI Bridge for VS Code
+
+For a comprehensive vision of integrating S.P.A.R.K. with VS Code as a seamless voice coding assistant, see:
+
+**[VOICE_AI_BRIDGE_CONCEPT.md](./VOICE_AI_BRIDGE_CONCEPT.md)**
+
+This document outlines a future extension that would create an uninterrupted voice conversation experience while coding, combining the power of S.P.A.R.K. with direct IDE integration.
 
 ---
 
